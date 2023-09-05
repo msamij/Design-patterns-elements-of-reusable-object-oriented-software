@@ -1,14 +1,11 @@
-package main.factories;
+package abstractfactorypattern.main.abstractfactory;
 
-import main.Door;
-import main.Maze;
-import main.Room;
-import main.Wall;
+import abstractfactorypattern.main.abstractproduct.Door;
+import abstractfactorypattern.main.abstractproduct.Room;
+import abstractfactorypattern.main.abstractproduct.Wall;
+import abstractfactorypattern.main.client.Maze;
 
 public abstract class MazeFactory {
-	public MazeFactory() {
-	}
-
 	public Maze makeMaze() {
 		return new Maze();
 	}

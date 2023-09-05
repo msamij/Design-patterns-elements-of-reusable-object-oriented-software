@@ -1,7 +1,9 @@
-package main;
+package abstractfactorypattern.main.client;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import abstractfactorypattern.main.abstractproduct.Room;
 
 public class Maze {
 	private Map<Integer, Room> rooms;

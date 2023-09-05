@@ -1,6 +1,10 @@
-package main;
+package abstractfactorypattern.main.client;
 
-import main.factories.MazeFactory;
+import abstractfactorypattern.main.abstractfactory.MazeFactory;
+import abstractfactorypattern.main.abstractproduct.Direction;
+import abstractfactorypattern.main.abstractproduct.Door;
+import abstractfactorypattern.main.abstractproduct.Room;
+import abstractfactorypattern.main.abstractproduct.Wall;
 
 public class MazeGame {
 	public Maze createMaze() {
