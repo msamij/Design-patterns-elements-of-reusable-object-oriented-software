@@ -16,7 +16,7 @@ public class Maze {
 		rooms.put(room.getRoomNo(), room);
 	}
 
-	public Room roomNo(int roomNumber) {
+	public Room getRoom(int roomNumber) {
 		return rooms.get(roomNumber);
 	}
 }

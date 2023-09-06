@@ -1,4 +1,4 @@
-package builderpattern.main.mazebuilder;
+package builderpattern.main.builder;
 
 import abstractfactorypattern.main.client.Maze;
 
