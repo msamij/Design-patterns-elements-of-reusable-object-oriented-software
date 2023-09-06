@@ -1,7 +1,5 @@
 package builderpattern.main.concretebuilder.maze;
 
-import java.util.HashMap;
-
 import abstractfactorypattern.main.abstractproduct.maze.Direction;
 import abstractfactorypattern.main.abstractproduct.maze.Door;
 import abstractfactorypattern.main.abstractproduct.maze.Room;
@@ -10,13 +8,7 @@ import abstractfactorypattern.main.client.maze.Maze;
 import builderpattern.main.builder.maze.MazeBuilder;
 
 public class StandardMazeBuilder implements MazeBuilder {
-	private Maze currentMaze;
-	private HashMap<Integer, Room> rooms;
-
-	public StandardMazeBuilder() {
-		currentMaze = null;
-		rooms = new HashMap<>();
-	}
+	private Maze currentMaze = null;
 
 	@Override
 	public void buildMaze() {

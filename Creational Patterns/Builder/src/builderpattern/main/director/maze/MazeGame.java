@@ -18,10 +18,19 @@ public class MazeGame {
 		return builder.getMaze();
 	}
 
+	public Maze createComplexMaze(MazeBuilder builder) {
+		builder.buildMaze();
+		builder.buildRoom(1);
+		builder.buildRoom(2);
+		builder.buildRoom(1001);
+		builder.buildDoor(1, 2);
+		return builder.getMaze();
+	}
+
 	public Maze countingMazeBuilder(MazeBuilder builder, int rooms, int doors) {
 		builder.buildMaze();
 		CountingMazeBuilder countingMazeBuilder = new CountingMazeBuilder();
 		countingMazeBuilder.getCounts(rooms, doors);
-		return null;
+		return builder.getMaze();
 	}
 }

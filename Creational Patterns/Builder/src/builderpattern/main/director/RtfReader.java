@@ -11,9 +11,7 @@ public class RtfReader {
 	}
 
 	public void parseRtf() {
-		textConverter.convertCharacter('0');
-		textConverter.convertFontChange(null);
-		textConverter.convertParagraph(null);
+		textConverter.convertCharacter('0').convertFontChange(null).convertParagraph(null);
 	}
 
 	public TextConverter getBuilder() {

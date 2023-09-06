@@ -5,18 +5,11 @@ import abstractfactorypattern.main.client.maze.Maze;
 import builderpattern.main.builder.maze.MazeBuilder;
 
 public class CountingMazeBuilder implements MazeBuilder {
-	private Maze currentMaze;
-	private int doors;
-	private int rooms;
-
-	public CountingMazeBuilder() {
-		doors = 0;
-		rooms = 0;
-	}
+	private int doors = 0;
+	private int rooms = 0;
 
 	@Override
 	public void buildMaze() {
-		currentMaze = new Maze();
 	}
 
 	@Override
@@ -39,6 +32,6 @@ public class CountingMazeBuilder implements MazeBuilder {
 
 	@Override
 	public Maze getMaze() {
-		return new Maze();
+		return null;
 	}
 }
