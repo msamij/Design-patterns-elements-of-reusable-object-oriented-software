@@ -1,4 +1,4 @@
-package abstractfactorypattern.main.abstractproduct;
+package abstractfactorypattern.main.abstractproduct.maze;
 
 public class Room extends MapSite {
 	private int roomNo;

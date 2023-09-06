@@ -1,6 +1,6 @@
-package builderpattern.main.builder;
+package builderpattern.main.builder.maze;
 
-import abstractfactorypattern.main.client.Maze;
+import abstractfactorypattern.main.client.maze.Maze;
 
 public interface MazeBuilder {
 	public Maze getMaze();

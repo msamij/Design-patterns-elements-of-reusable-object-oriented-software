@@ -1,4 +1,4 @@
-package abstractfactorypattern.main.abstractproduct;
+package abstractfactorypattern.main.abstractproduct.maze;
 
 public class Door extends MapSite {
 	private Room room1;

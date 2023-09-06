@@ -1,10 +1,11 @@
-package builderpattern.main.concretebuilder;
+package builderpattern.main.concretebuilder.maze;
 
-import abstractfactorypattern.main.abstractproduct.Direction;
-import abstractfactorypattern.main.client.Maze;
-import builderpattern.main.builder.MazeBuilder;
+import abstractfactorypattern.main.abstractproduct.maze.Direction;
+import abstractfactorypattern.main.client.maze.Maze;
+import builderpattern.main.builder.maze.MazeBuilder;
 
 public class CountingMazeBuilder implements MazeBuilder {
+	private Maze currentMaze;
 	private int doors;
 	private int rooms;
 
@@ -15,6 +16,7 @@ public class CountingMazeBuilder implements MazeBuilder {
 
 	@Override
 	public void buildMaze() {
+		currentMaze = new Maze();
 	}
 
 	@Override

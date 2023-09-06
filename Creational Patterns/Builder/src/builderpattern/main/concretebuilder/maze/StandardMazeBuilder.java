@@ -1,13 +1,13 @@
-package builderpattern.main.concretebuilder;
+package builderpattern.main.concretebuilder.maze;
 
 import java.util.HashMap;
 
-import abstractfactorypattern.main.abstractproduct.Direction;
-import abstractfactorypattern.main.abstractproduct.Door;
-import abstractfactorypattern.main.abstractproduct.Room;
-import abstractfactorypattern.main.abstractproduct.Wall;
-import abstractfactorypattern.main.client.Maze;
-import builderpattern.main.builder.MazeBuilder;
+import abstractfactorypattern.main.abstractproduct.maze.Direction;
+import abstractfactorypattern.main.abstractproduct.maze.Door;
+import abstractfactorypattern.main.abstractproduct.maze.Room;
+import abstractfactorypattern.main.abstractproduct.maze.Wall;
+import abstractfactorypattern.main.client.maze.Maze;
+import builderpattern.main.builder.maze.MazeBuilder;
 
 public class StandardMazeBuilder implements MazeBuilder {
 	private Maze currentMaze;
